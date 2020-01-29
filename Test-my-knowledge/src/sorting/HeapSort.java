@@ -2,7 +2,7 @@ package sorting;
 
 public class HeapSort implements SortingAlgorithm {
 	@Override
-	public void sort(int arr[]) { 
+	public void sort(int []arr) { 
 		System.out.println("Sorting with HeapSort sort algorithm.");
         int n = arr.length; 
   
@@ -24,8 +24,7 @@ public class HeapSort implements SortingAlgorithm {
     } 
 	// To heapify a subtree rooted with node i which is 
     // an index in arr[]. n is size of heap 
-    private void heapify(int arr[], int n, int i) 
-    { 
+    private void heapify(int []arr, int n, int i) { 
         int largest = i;  // Initialize largest as root 
         int l = 2*i + 1;  // left = 2*i + 1 
         int r = 2*i + 2;  // right = 2*i + 2 
